@@ -1,13 +1,12 @@
 const button = document.querySelector('button');
 const ul = document.querySelector('ul');
+const items = document.querySelectorAll('li');
 
 button.addEventListener('click', () => {
     const li = document.createElement('li');
     li.textContent = 'item new';
     ul.appendChild(li);
 });
-
-const items = document.querySelectorAll('li');
 
 items.forEach(item => {
     item.addEventListener('click', e => {
